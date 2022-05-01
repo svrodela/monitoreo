@@ -62,7 +62,7 @@ app.get('/data/esp32', (req, res) => {
       timestampsInSnapshots: true
     });
     var wholeData = []
-	db.collection('lin_esp32').orderBy('waktu', 'asc').get()
+	db.collection('Valores').orderBy('waktu', 'asc').get()
     .then(snapshot => {
       snapshot.forEach(doc => {
         // console.log(doc.id, '=>', doc.data());
