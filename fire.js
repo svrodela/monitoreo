@@ -1,12 +1,7 @@
 var firebase = require('firebase')
 // change lines below with your own Firebase snippets!
 var config = {
-  /*apiKey: "AIzaSyDSLRypcYx2yHSqpVXJMBrzYw1xAHZtgYI",
-  authDomain: "test-iot-esp.firebaseapp.com",
-  databaseURL: "https://test-iot-esp.firebaseio.com",
-  projectId: "test-iot-esp",
-  storageBucket: "test-iot-esp.appspot.com",
-  messagingSenderId: "467772798973"*/
+
   apiKey: "AIzaSyBeZZte8NoLdzj5eYd26QnICidQoP85B8c",
   authDomain: "region676-e21b8.firebaseapp.com",
   databaseURL: "https://region676-e21b8.firebaseio.com",

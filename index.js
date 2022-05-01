@@ -83,7 +83,7 @@ app.post('/data/esp32', (req, res)=>{
 	db.settings({
       timestampsInSnapshots: true
     });
-    db.collection('lin_esp32').add({
+    db.collection('Valores').add({
       suhu: req.body.suhu,
       lembab: req.body.lembab,
       analog: req.body.analog,
