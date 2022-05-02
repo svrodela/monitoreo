@@ -62,7 +62,7 @@ app.get('/data/esp32', (req, res) => {
       timestampsInSnapshots: true
     });
     var wholeData = []
-	db.collection('Valores').orderBy('waktu', 'asc').get()
+	db.collection('Valores').orderBy('fecha', 'asc').get()
     .then(snapshot => {
       snapshot.forEach(doc => {
         // console.log(doc.id, '=>', doc.data());
@@ -84,17 +84,17 @@ app.post('/data/esp32', (req, res)=>{
       timestampsInSnapshots: true
     });
     db.collection('Valores').add({
-      suhu: req.body.suhu,
-      lembab: req.body.lembab,
-      analog: req.body.analog,
-      waktu: new Date()
+      icalor: req.body.icalor,
+      iruido: req.body.iruido,
+      igas: req.body.igas,
+      fecha: new Date()
     });
     res.send({
-      suhu: req.body.suhu,
-      lembab: req.body.lembab,
-      analog: req.body.analog,
-      waktu: new Date(),
-      status: 'POST data sukses!'
+      icalor: req.body.icalor,
+      iruido: req.body.iruido,
+      igas: req.body.igas,
+      fecha: new Date(),
+      status: 'Valores insertados!'
   })
 })
 
