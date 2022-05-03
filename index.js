@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     '<h1>API Express & Firebase Cloud Firestore</h1><ul><li><p><b>GET /ver</b></p></li><li><p><b>POST /insertar</b>  => {calor,ruido,gas}</p></li></ul>')
 })
 
-app.get('/insertar', (req, res) => {
+app.get('/ver', (req, res) => {
   const db = fire.firestore();
     db.settings({
       timestampsInSnapshots: true
@@ -34,7 +34,7 @@ app.get('/insertar', (req, res) => {
   })
 })
 
-app.post('/ver', (req, res)=>{
+app.post('/insertar', (req, res)=>{
   const db = fire.firestore();
 	db.settings({
       timestampsInSnapshots: true
